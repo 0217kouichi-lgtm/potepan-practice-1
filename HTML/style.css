@@ -1,0 +1,24 @@
+.cards {
+  display: flex;
+  gap: 24px; /* 末尾に ; を追加 */
+}
+
+/* 各カードの背景色（色違いの条件を満たすために追加） */
+.card-1 {
+  background-color: #fba722; /* オレンジ */
+}
+
+.card-2 {
+  background-color: #22a7fb; /* 青 */
+}
+
+.card-3 {
+  background-color: #22fb93; /* 緑 */
+}
+
+/* スマホ表示用（768px以下） */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* display: flex; は親から継承されるため省略可能 */
+  }
+}
